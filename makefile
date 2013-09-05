@@ -10,5 +10,8 @@ blitting02:	blitting02.c
 blitting03:	blitting03.c
 	gcc blitting03.c loadimage2.c blitting.c -Wall -g -o sdlimage02 -lSDL -lSDL_image
 	
+events04:	events04.c
+	gcc events04.c loadimage2.c blitting.c -Wall -g -o sdlevents02 -lSDL -lSDL_image
+
 clean:
-	rm -f sdlimage01 sdltester sdlblitting02
+	rm -f sdlimage02 sdlevents02 sdlimage01 sdltester sdlblitting02
